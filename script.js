@@ -7,9 +7,9 @@ let loginErrorMsg = document.querySelector('.login-error__msg');
 let loginModalWindow = document.querySelector('.login__modal-window');
 
 loginButton.addEventListener("click", function(e) {
-    e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
+   
+    let username = loginForm.value;
+    let password = loginForm.value;
 
     if (username != "" && password != "") {
         loginModalWindow.classList.remove('login__modal-window');
@@ -17,7 +17,6 @@ loginButton.addEventListener("click", function(e) {
     } else {
         loginErrorMsg.style.opacity = 1;
     }
-    
 });
 
 
