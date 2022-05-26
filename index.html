@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css">
+</head>
+
+<body>
+    <div class="login__modal-window ">
+        <div class="main-holder">
+            <h1 class="login-header">Login</h1>
+
+            <div class="login-error__msg-holder">
+                <p class="login-error__msg">Invalid username <span class="error-msg__second-line">and/or password</span>
+                </p>
+            </div>
+
+            <form class="login-form">
+                <input type="text" name="username" class="login-form__field" placeholder="Username">
+                <input type="password" name="password" class="login-form__field" placeholder="Password">
+                <input type="submit" value="Login" class="login-form__submit">
+            </form>
+
+        </div>
+    </div>
+    <!-- форма сообщений -->
+    <main class="contaner__wrapper">
+        <form action="" method="post" class="contaner__form">
+            <div class="contaner__location">
+                <select name="location-list" id="">
+                    <option>Список фильмов</option>
+                </select>
+            </div>
+            <div class="contaner__button-location">
+                <button class="button-location__button" type="submit">Редактировать</button>
+            </div>
+
+        </form>
+
+        <div class="contaner__resalt-box">
+            <div class="resalt-box__contaner-info">
+                <div class="contaner-info">Название фильма: <span data-info="name"></span></div>
+                <div class="contaner-info"> Год производства: <span data-info="productionYear"></span></div>
+                <div class="contaner-info">Страна: <span data-info="country"></span></div>
+                <div class="contaner-info">Жанр: <span data-info="genre"></span></div>
+                <div class="contaner-info">Слоган: <span data-info="slogan"></span></div>
+                <div class="contaner-info">Описание: <span data-info="description"></span></div>
+            </div>
+            <div class="resalt-box__create-location notactive">
+                <h3>Редактор фильмов</h3>
+                <div class="resalt-box__contaner-form">
+                    <input type="text" value="" class="resalt-box__title-location"
+                        placeholder="Введите название фильма">
+                    <button class="resalt-box__button" type="submit">Добавить</button>
+                </div>
+                <div class="resalt-box__list">
+                    <div class="list__resalt-box">
+                        <!-- <div class="resalt-box__element">Text</div>
+                        <i class="icon-shopping-basket"></i> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

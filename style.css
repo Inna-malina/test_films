@@ -1,0 +1,240 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.login__modal-window {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #3a3a3a;
+}
+
+.main-holder {
+    width: 50%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px black;
+}
+
+.login-error__msg-holder {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-error__msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+}
+
+.error-msg__second-line {
+    display: block;
+}
+
+.login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-form__field::placeholder {
+    color: #3a3a3a;
+}
+
+.login-form__field {
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+}
+
+.login-form__submit {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ------список локаций------ */
+.contaner__wrapper {
+    margin: 10px 50px;
+    background: #bdbdbd;
+    padding: 10px;
+}
+
+.contaner__wrapper>*:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.contaner__form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.contaner__form>*:not(:last-child) {
+    margin-right: 20px;
+}
+
+.contaner__location select {
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.button-location__button {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    background: #fc7a00;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+/* ------список локаций------ */
+.contaner__resalt-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.active {
+    opacity: 1;
+}
+
+.notactive {
+    opacity: 0;
+}
+
+.contaner__resalt-box>*:not(:last-child) {
+    margin-right: 20px;
+}
+
+.resalt-box__contaner-info {
+    width: 420px;
+    border: 2px solid white;
+}
+
+.resalt-box__contaner-info .contaner-info span {
+    font-weight: 600;
+}
+
+.resalt-box__contaner-info div:nth-child(odd) {
+    background: #e2e2e2;
+}
+
+.resalt-box__contaner-info div {
+    padding: 10px;
+}
+
+/* ------редактирование локаций------ */
+.resalt-box__create-location {
+    width: 420px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.resalt-box__create-location h3 {
+    margin: 0px;
+}
+
+.resalt-box__create-location>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.resalt-box__contaner-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.resalt-box__contaner-form>*:not(:last-child) {
+    margin-right: 20px;
+}
+
+.resalt-box__title-location {
+    display: block;
+    width: 300px;
+    height: 20px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.resalt-box__button {
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    background: #fc7a00;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+/* ------названия кинотеатров------ */
+
+.list__resalt-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.resalt-box__list>*:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.list__resalt-box>*:not(:last-child) {
+    margin-right: 20px;
+}
+
+.resalt-box__element {}
+
+.icon-shopping-basket:before {
+    cursor: pointer;
+    display: block;
+    content: '\f291';
+    font-size: 12px;
+    color: aliceblue;
+}
