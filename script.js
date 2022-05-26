@@ -18,7 +18,6 @@ loginButton.addEventListener("click", function(e) {
         loginErrorMsg.style.opacity = 1;
     }
     
-    return false;
 });
 
 
