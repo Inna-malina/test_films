@@ -6,7 +6,7 @@ let loginButton = document.querySelector('.login-form__submit');
 let loginErrorMsg = document.querySelector('.login-error__msg');
 let loginModalWindow = document.querySelector('.login__modal-window');
 
-loginButton.addEventListener("click", (e) => {
+loginButton.addEventListener("click", function(e) {
     e.preventDefault();
     const username = loginForm.username.value;
     const password = loginForm.password.value;
